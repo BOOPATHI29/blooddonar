@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Main page</title>
+	<link rel = "icon" href = "b.JFIF"    type = "image/x-icon"> 
+	<style type="text/css">
+
+
+
+
+
+			.login{
+			
+			width: 450px;
+			height: 400px;
+			margin:20px;
+			left: 40%;
+			top: 20%;
+			}
+
+
+			input[type=text], select {
+			  padding: 10px ;
+			  }
+
+		.id{
+			text-shadow:currentColor;
+			font-size: 40px;
+		}
+		.id2{
+			 border-radius: 14px; 
+			 border-spacing: 0;
+			top: 40px;
+			left:  80px;
+			position: relative;
+			border-radius: 15px;
+			border-color: #f00707;
+		}
+		.table1{                     
+			float: left;
+			width: 500px;
+			height: 450px;
+			margin:30px;
+			left: 60%;
+			top: 20%;
+			position: absolute;
+			box-shadow: 2px 2px 2px 2px;}
+			
+		
+		input[type=button] {
+			 width: 100%;
+			  background-color: #4CAF50;
+			  color: white;
+			  padding: 14px 20px;
+			  margin: 8px 0;
+			  border: none;
+			  border-radius: 4px;
+			  cursor: pointer;
+			
+	}
+		.id4{
+			font-size: 40px;
+
+		}
+		input[type=text], select {
+			  padding: 10px ;
+			  width:200px;
+			  }
+		input[type=number], select {
+			  padding: 10px ;
+			  width: 200px;
+			  }
+			input[type=password], select {
+			  padding: 10px ;
+			  width: 200px;
+			  }
+		input[type=date], select {
+			  padding: 10px ;
+			  width: 200px;
+			  
+			  }
+		input[type=Email-id], select {
+			  padding: 10px ;
+			  width: 200px;
+			  }
+
+		
+     input[type=button], select {
+					  padding: 10px ;
+					  width: 100px;
+					  background-color: green;
+					  }
+		input[type=button]:hover {
+ 		 		background-color: red;
+}
+	</style>
+</head>
+<body bgcolor="#37de90">
+<center><h1 style="color: red" class="id"> TAMIL NADU BLOOD BANK </h1></center>
+<div>
+	<img src="b2.jpg" class="id2">
+</div>
+
+<div class="table1" style="background-color: white;">
+ 
+	<table >
+		<tr class="id4" bgcolor="green">
+			<td width="500px" style="color: white;"><b>Log In</b></td>
+		</tr>
+
+
+</table></div>
+
+<form name="main" action="main" method="post">
+
+
+<div class="table1">
+
+<table class="login"><form>
+
+<tr>
+	<td>
+		<h1>User Name :</h1>
+	</td>
+	<td>
+		<input id="name" type="Email-id"  placeholder="Enter your Email-id">
+	</td>
+</tr>
+	<tr>
+		<td>
+			<h1>Password : </h1>
+		</td>
+		<td>
+			<input  id="pass" type="password" placeholder="only in characters" >
+		</td>
+	</tr>
+<tr>
+	<td>
+		<input type="button" name="w" value="Submit" onclick="val()">
+	</td>
+</tr>
+ <tr><td><a href="https://www.google.com/search?rlz=1C1CHBF_enIN818IN818&sxsrf=ACYBGNRvr6nqK1vZLmw64UN7NDQ2zBPLcw%3A1569519240255&ei=iPaMXbuYD5zjz7sP_YWWmAg&q=color+pi&oq=color+pi&gs_l=psy-ab.3..0j0i20i263j0l2j0i131j0l5.3312.3904..4555...0.0..0.294.744.1j1j2....3..0....1..gws-wiz.......0i67j0i10i67.64beggrqKFU&ved=0ahUKEwi7_KHmgu_kAhWc8XMBHf2CBYMQ4dUDCAs&uact=5">Forget Password</a></td></tr>
+</table> </form>
+<table>
+	
+ 
+	<table >
+		<tr class="id4" bgcolor="green">
+			<td width="500px" style="color: white;"><b>To Sign Up <a href="signuppage.html" target="_self">click here</a></b></td>
+		</tr>
+
+
+</table></div>
+		
+	</form>
+</table>
+
+</div>
+
+</body>
+<script type="text/javascript">
+	
+function val()
+{
+let a=document.getElementById('name').value;
+
+
+	 if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/g.test(a))
+	  {
+	  	let b=document.getElementById('pass').value;
+	  	var pass=  /^[A-Za-z]\w{7,14}$/;
+		if(b.match(pass)) 
+			{ 
+	   	 return window.location.href='home.html';
+	  		}
+	  	else
+			{ 
+			alert('password Wrong..min of 7 characters	.!')
+			return false;
+		}
+	}
+	else{
+	   alert("You have entered an invalid email address!")
+	   return (false)
+	}
+
+
+	}
+
+	
+
+</script>
+
+</html>

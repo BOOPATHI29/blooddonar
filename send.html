@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>send request</title>
+	<style type="text/css">
+		.id{
+			font-family: serif;
+			font-size: 20px;
+			font-size: 40px;
+
+		}	
+		.id2{
+			border-color: red;
+			border-style: double;
+			border-width: 10px;
+			height: 900px;
+			width: 970px;
+			font-size: 40px;
+		}
+
+		.id1{
+			font-family: serif;
+			color: green;
+			font-size: 30px;
+
+		}
+		input[type=text], select {
+			  padding: 10px ;
+			  width:200px;
+			  }
+		input[type=number], select {
+			  padding: 10px ;
+			  width: 200px;
+			  }
+		input[type=reset], select {
+			  padding: 10px ;
+			  width: 200px;
+			  
+			  }
+		input[type=Email-id], select {
+			  padding: 10px ;
+			  width: 200px;
+			  }
+		input[type=password], select {
+			  padding: 10px ;
+			  width: 200px;
+			  }
+
+	
+	input[type=reset]{
+					  padding: 10px ;
+					  width: 100px;
+					  background-color: green;
+					  }
+     input[type=button]{
+					  padding: 10px ;
+					  width: 100px;
+					  background-color: green;
+					  }
+		input[type=button]:hover {
+ 		 		background-color: red;}
+ 		 input[type=reset]:hover {
+ 		 		background-color: blue;}
+
+
+
+
+
+</style>
+</head><center>
+<body background="sen.jpg" >
+	<form name="e" action="home.html">
+<table bgcolor="#f79d23" class="id2" >
+	<tr ><td class="id" colspan="3"><center> <b>Send Request</b></center> </td></tr>
+	<tr><td rowspan="15" class="id1" bgcolor="#f45e69"><center> 
+	                     Donate <br><br>
+	                 	Blood</center></td></tr>
+	<tr><td></td><td><span style="color: red">*</span>
+	  Name :</td>
+	  <td>
+	  	<input type="text" name="1" placeholder="your name" required=""></td>
+	  </tr>
+	<tr>
+		<td>
+			
+		</td>
+		<td>
+			<span style="color: red">*</span>
+	Gender :</td>
+	<td>
+		<input type="radio" name="2"> Male <input type="radio" name="2"> Female</td>
+	</tr>
+	<tr>
+		<td></td>
+		<td>
+			<span style="color: red">*</span>
+	Age : </td>
+	<td>
+		<input type="number" name="a"></td>
+	</tr>
+	<tr>
+		<td></td>
+		<td>
+			<span style="color: red">*</span>
+	Blood Group : </td>
+	<td>
+		<select>
+		<option>A +ve</option><option>B +ve</option><option>O +ve</option><option>AB +ve</option><option>A -ve</option><option>B -ve</option><option>O -ve</option><option>AB -ve</option>
+	</select></td></tr>
+	<tr><td></td><td><span style="color: red">*</span>Mobile Number : </td><td><input type="text" name="w" maxlength="10"></td></tr>
+	<tr><td></td><td><span style="color: red">*</span>Email-Id : </td><td><input type="Email-id" id="name" placeholder="rohitsharma@gmail.com"></td></tr>
+		<tr><td></td><td><span style="color: red">*</span>Hospital Name  : </td><td><input type="text" id="pass"></td></tr>
+		<tr><td></td><td><span style="color: red">*</span>Address  : </td><td><textarea placeholder="Enter Address"></textarea></td></tr>
+
+
+	<tr><td></td><td><input type="button" value="Submit" onclick="cl()"><input type="Reset"  value="Reset"></td></tr></form></center>
+
+
+
+</table>
+</body>
+<script type="text/javascript">
+	function cl()
+	{
+		alert("Request Sended");
+		return window.location.href="home.html";
+	}
+</script>
+	
+</html>

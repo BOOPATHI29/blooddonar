@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Search blood banks</title>
+	<style type="text/css">
+		.id{
+			font-family: serif;
+			font-size: 20px;
+			font-size: 40px;
+
+		}	
+		.id2{
+			border-color: red;
+			border-style: inset;
+			height: 600px;
+			width: 800px;
+			font-size: 40px;
+		}
+
+		.id1{
+			font-family: serif;
+			color: #db120b;
+			font-size: 30px;
+
+		}
+		input[type=text], select {
+			  padding: 10px ;
+			  width:200px;
+			  }
+		input[type=number], select {
+			  padding: 10px ;
+			  width: 200px;
+			  }
+		input[type=reset], select {
+			  padding: 10px ;
+			  width: 200px;
+			  
+			  }
+		input[type=Email-id], select {
+			  padding: 10px ;
+			  width: 200px;
+			  }
+		input[type=password], select {
+			  padding: 10px ;
+			  width: 200px;
+			  }
+
+	
+	input[type=reset]{
+					  padding: 10px ;
+					  width: 100px;
+					  background-color: green;
+					  }
+     input[type=button]{
+					  padding: 10px ;
+					  width: 100px;
+					  background-color: green;
+					  }
+		input[type=button]:hover {
+ 		 		background-color: red;}
+ 		 input[type=reset]:hover {
+ 		 		background-color: blue;}
+
+
+
+
+
+</style>
+</head>
+<center>
+	
+
+<body>
+	<form name="e" action="home.html" method="post">
+		<center ><a href="home.html" style="color: green" style="background-color: #66ffff" ><h1>BACK TO HOME</h1></a></center>
+<table  class="id2" >
+	<tr ><td class="id" colspan="3"><center> <b>SEARCH ENGINE</b></center> </td></tr>
+	
+	<tr><td></td><td><span style="color: red">*</span>
+	  Blood Bank ID :</td>
+	  <td>
+	  	<input type="text" id="nm" placeholder="bank id" required=""></td>
+	  </tr>
+	<tr><td></td><td><span style="color: red">*</span>BLOOD BANK NAME  : </td><td><input type="text" name="w" maxlength="10"></td></tr>
+	
+	<tr><td colspan="3" ><center><input type="button" value="Search" onclick="cl()"><input type="Reset"  value="Reset"></td></tr></form></center>
+
+
+
+</table>
+</body>
+</center>
+<script type="text/javascript">
+	
+
+	function cl(){
+		let a=document.getElementById('nm').value;
+		
+		if (/[0-9]/.test(a))
+	  	{
+				alert("EMPTY");
+			   	 return window.location.href='home.html';
+		}
+		else
+		{
+		   alert("please enter an valid Bank id!")
+		   return (false)
+		}
+
+
+}
+	
+</script>
+	
+
+	
+</html>
+
+
+
+</body>
+</html>

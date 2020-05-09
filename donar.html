@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>donar registration</title>
+	<style type="text/css">
+		.id{
+			font-family: serif;
+			font-size: 20px;
+			font-size: 40px;
+
+		}	
+		.id2{
+			border-color: red;
+			border-style: inset;
+			height: 600px;
+			width: 800px;
+			font-size: 40px;
+		}
+
+		.id1{
+			font-family: serif;
+			color: #db120b;
+			font-size: 30px;
+
+		}
+		input[type=text], select {
+			  padding: 10px ;
+			  width:200px;
+			  }
+		input[type=number], select {
+			  padding: 10px ;
+			  width: 200px;
+			  }
+		input[type=reset], select {
+			  padding: 10px ;
+			  width: 200px;
+			  
+			  }
+		input[type=Email-id], select {
+			  padding: 10px ;
+			  width: 200px;
+			  }
+		input[type=password], select {
+			  padding: 10px ;
+			  width: 200px;
+			  }
+
+	
+	input[type=reset]{
+					  padding: 10px ;
+					  width: 100px;
+					  background-color: green;
+					  }
+     input[type=button]{
+					  padding: 10px ;
+					  width: 100px;
+					  background-color: green;
+					  }
+		input[type=button]:hover {
+ 		 		background-color: red;}
+ 		 input[type=reset]:hover {
+ 		 		background-color: blue;}
+
+
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+
+
+</style>
+</head><center>
+<body background="b1.jpg">
+	<form name="e" action="home.html" method="post">
+<table bgcolor="#f79d99" class="id2" >
+	<tr ><td class="id" colspan="3"><center> <b>DONAR  REGISTRATION</b></center> </td></tr>
+	<tr><td rowspan="15" class="id1" bgcolor="#f56e69"><center> I  AM  <BR><br>
+	                    A DONAR <br><br>
+	                 	PERSON</center></td></tr>
+	<tr><td></td><td><span style="color: red">*</span>
+	  Donar name :</td>
+	  <td>
+	  	<input type="text" name="1" placeholder="your name" required=""></td>
+	  </tr>
+	<tr>
+		<td></td>
+		<td><span style="color: red">*</span>
+	 Upload your : <br>photo </td>
+	 <td>
+	 	<input type="file" name="1" placeholder="your name">
+	 </td>
+	</tr>
+	<tr>
+		<td>
+			
+		</td>
+		<td>
+			<span style="color: red">*</span>
+	Gender :</td>
+	<td>
+		<input type="radio" name="2"> Male <input type="radio" name="2"> Female</td>
+	</tr>
+	<tr>
+		<td></td>
+		<td>
+			<span style="color: red">*</span>
+	Age : </td>
+	<td>
+		<input type="number" name="a"></td>
+	</tr>
+	<tr>
+		<td></td>
+		<td>
+			<span style="color: red">*</span>
+	Blood Group : </td>
+	<td>
+		<select>
+		<option>A +ve</option><option>B +ve</option><option>O +ve</option><option>AB +ve</option><option>A -ve</option><option>B -ve</option><option>O -ve</option><option>AB -ve</option>
+	</select></td></tr>
+	<tr><td></td><td><span style="color: red">*</span>Mobile Number : </td><td><input type="text" name="w" maxlength="10"></td></tr>
+	<tr><td></td><td><span style="color: red">*</span>Email-Id : </td><td><input type="Email-id" id="na" placeholder="rohitsharma@gmail.com"></td></tr>
+		<tr><td></td><td><span style="color: red">*</span>Password  : </td><td><input type="password" id="pa"></td></tr>
+
+	<tr><td></td><td><input type="button" value="Submit" onclick="cl()"><input type="Reset"  value="Reset"></td></tr></form></center>
+
+
+
+</table>
+</body>
+<script type="text/javascript">
+	function cl(){
+		let a=document.getElementById('na').value;
+		
+		if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(a))
+	  	{
+		  	let b=document.getElementById('pa').value;
+		  	var pass=  /^[A-Za-z]\w{7,14}$/;
+				if(b.match(pass)) 
+					{ 
+						alert("successfully registered");
+			   	 return window.location.href='home.html';
+			  		}
+			  	else
+					{ 
+					alert('password Wrong..min of 7 characters	.!')
+					return false;
+				}
+				}
+		else{
+		   alert("You have entered an invalid email address!")
+		   return (false)
+		}
+
+
+}
+	
+</script>
+	
+</html>

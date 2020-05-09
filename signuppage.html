@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>signup</title>
+	<style type="text/css">
+		.signup{
+			
+			font-size: 30px;
+		}
+		input[type=text], select {
+			  padding: 10px ;
+			  width:200px;
+			  }
+		input[type=number], select {
+			  padding: 10px ;
+			  width: 200px;
+			  }
+		input[type=date], select {
+			  padding: 10px ;
+			  width: 200px;
+			  
+			  }
+		input[type=Email-id], select {
+			  padding: 10px ;
+			  width: 200px;
+			  }
+
+		input[type=submit], select {
+					  padding: 10px ;
+					  width: 100px;
+					  background-color: green;
+					  }
+		input[type=submit]:hover {
+ 		 		background-color: red;
+		}
+		.table2{
+			float: center;
+			width: 500px;
+			height: 250px;
+			margin:50px;
+			left: 30%;
+			top: 10%;
+			position: absolute;
+				}
+		.id1{
+			text-shadow:currentColor;
+			font-size: 40px;}
+
+		a.e2:hover,a.e2:active{color:0000FF,font-family:sans-serif; font-size:150%;
+	</style>
+</head>
+<script type="text/javascript">
+	function show() {
+    alert("Successfully Registered");
+}
+
+</script>
+<body>
+	<div bgcolor="#fd3f3f">
+<center><h1 style="color: red" class="id1"> TAMIL NADU BLOOD BANK </h1></center></div>
+<form name="signup" action="index.html" method="post"> 
+<div class="table2">
+	<form name="er">
+		<table class="signup">
+			<tr><th>FIRST NAME : </th>
+				<td><input type="text" placeholder="first name " title="enter your 1st name" maxlength="10"></td>
+			</tr>
+			<tr><th>LAST NAME : </th>
+				<td><input type="text"  placeholder="lastname" title="enter your last name" maxlength="18"></td>
+			</tr>
+			<tr><th>D.O.B : </th>
+				<td><input type="Date"  placeholder="Date Of Birth" title="D O B"></td>
+			</tr>
+			<tr><th>Moibile Number : </th>
+				<td><input type="number"  title="Age" maxlength="10"></td>
+			</tr>
+			<tr><th>Email-Id : </th>
+				<td><input type="Email-Id" id="id" placeholder="rohit45@gmail.com"></td>
+			</tr>
+			<tr><th>Password: </th>
+				<td><input type="text" placeholder="only in characters" title="enter your password" maxlength="20"></td>
+			</tr>
+			<tr><th>O T P : </th>
+				<td><input type="number" name="e" ></td>
+			</tr>
+			<tr><th></th>
+				<td class="a"><input type="Submit" onclick="cl()" value="Submit" ></td>
+			</tr>
+		</table>
+	</form>
+</div>
+</form>
+</body>
+<script type="text/javascript">
+	
+
+	function cl(){
+		let a=document.getElementById('id').value;
+		
+		if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(a))
+	  	{
+				alert("successfully registered");
+			   	return window.location.href='index.html'
+		}
+		else
+		{
+		   alert("please enter an valid email address!")
+		   return window.location.href='signuppage.html'
+		}
+
+
+}
+	
+</script>
+
+</html>
